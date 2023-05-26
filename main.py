@@ -9,7 +9,7 @@ SQL_FILE_PATH = 'data.sql'
 
 
 def read_sql_file(filename: str):
-    sql_file = open(filename, 'r', encoding="utf8")
+    sql_file = open(filename, 'r', encoding="UTF-8")
     sql_content = sql_file.read()
     parsed = sqlparse.parse(sql_content)
 
